@@ -1,0 +1,39 @@
+.gradle/
+local.properties
+**/build/
+.idea/
+*.iml
+*.hprof
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Gradle
+.gradle/
+**/build/
+
+# Configuración local
+local.properties
+*.log
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+captures/
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.hprof
+
+# Compilación nativa
+.externalNativeBuild/
+.cxx/
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos del editor
+.vscode/
