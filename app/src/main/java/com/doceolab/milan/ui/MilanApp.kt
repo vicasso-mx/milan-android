@@ -54,7 +54,6 @@ import com.doceolab.milan.model.Product
 import com.doceolab.milan.ui.theme.MilanBlue
 import com.doceolab.milan.viewmodel.StoreDestination
 import com.doceolab.milan.viewmodel.StoreViewModel
-import java.text.NumberFormat
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 import java.util.Locale
@@ -594,11 +593,3 @@ private fun Product.drawableId(): Int = when (imageName) {
     "product_11" -> R.drawable.product_11
     else -> R.drawable.product_12
 }
-
-private fun formatMoney(cents: Long): String = NumberFormat.getCurrencyInstance(
-    Locale.Builder().setLanguage("es").setRegion("MX").build(),
-).apply {
-    currency = java.util.Currency.getInstance("MXN")
-    minimumFractionDigits = 2
-    maximumFractionDigits = 2
-}.format(cents / 100.0) + " MXN"
